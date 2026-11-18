@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>श्री साईनाथ कृषी भांडार | बावडा, ता. इंदापूर, जि. पुणे</title>
-  <meta name="description" content="श्री साईनाथ कृषी भांडार, बावडा, ता. इंदापूर, जि. पुणे — प्रमाणित बियाणे, संतुलित खते, पीक संरक्षण आणि ठिबक सिंचन साधनांचे विश्वसनीय केंद्र." />
+  <title>श्री साईनाथ कृषी भांडार | महाळुंग, ता. माळशिरस, जि. सोलापूर</title>
+  <meta name="description" content="श्री साईनाथ कृषी भांडार, कुबेर नर्सरी जवळ, गट नं. २, अकलूज–टेंभुर्णी रोड, महाळुंग, ता. माळशिरस, जि. सोलापूर — प्रमाणित बियाणे, संतुलित खते, पीक संरक्षण आणि ठिबक सिंचन साधनांचे विश्वसनीय केंद्र." />
 
   <!-- Editorial & Modern Agritech Fonts (Devanagari + English) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -105,10 +105,15 @@
       0%, 100% { transform: scaleY(0.35); }
       50% { transform: scaleY(1); }
     }
+    @keyframes eqBreath {
+      0%, 100% { transform: scaleY(0.28); opacity: 0.65; }
+      50% { transform: scaleY(0.62); opacity: 1; }
+    }
 
     .animate-float-slow { animation: floatSlow 5.5s ease-in-out infinite; }
     .eq-bar { transform-origin: bottom; animation: eqPulse 0.9s ease-in-out infinite; }
-    .eq-paused .eq-bar { animation-play-state: paused; transform: scaleY(0.3); }
+    .eq-waiting .eq-bar { animation: eqBreath 1.6s ease-in-out infinite; }
+    .eq-paused .eq-bar { animation-play-state: paused; transform: scaleY(0.28); opacity: 0.5; }
     .animate-badge-pop { animation: badgePop 0.45s cubic-bezier(0.34, 1.56, 0.64, 1); }
     .animate-panel-switch { animation: panelFadeSlide 0.35s cubic-bezier(0.22, 1, 0.36, 1) forwards; }
 
@@ -192,14 +197,14 @@
             <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
             <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-400"></span>
           </span>
-          <span data-i18n="top_status">आज दुकान सुरू आहे • सकाळी ८:०० ते रात्री ८:३०</span>
+          <span data-i18n="top_status">आज दुकान सुरू आहे • सकाळी ८:०० ते रात्री ८:३० (दररोज सुरू)</span>
         </span>
         <span class="hidden md:inline-flex items-center gap-1.5 text-emerald-200/80">
           <svg class="w-3.5 h-3.5 text-gold-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
           </svg>
-          <span data-i18n="top_loc">बावडा, ता. इंदापूर, जि. पुणे</span>
+          <span data-i18n="top_loc">महाळुंग (अकलूज–टेंभुर्णी रोड), ता. माळशिरस, जि. सोलापूर</span>
         </span>
       </div>
 
@@ -262,7 +267,7 @@
               श्री साईनाथ कृषी भांडार
             </span>
             <span class="block text-[11px] sm:text-xs font-semibold text-gold-dark tracking-wide" data-i18n="shop_sub">
-              बावडा, ता. इंदापूर, जि. पुणे
+              महाळुंग, ता. माळशिरस, जि. सोलापूर
             </span>
           </div>
         </a>
@@ -286,7 +291,7 @@
             <span id="order-badge" class="inline-flex items-center justify-center min-w-[20px] h-5 px-1.5 rounded-full bg-gold text-obsidian text-xs font-bold">0</span>
           </button>
 
-          <a id="nav-call-link" href="tel:+919822000000" class="hidden md:inline-flex items-center gap-2 bg-emeraldDeep hover:bg-obsidian text-white text-sm font-semibold px-4 py-2.5 rounded-xl shadow-sm transition">
+          <a id="nav-call-link" href="tel:+919096779722" class="hidden md:inline-flex items-center gap-2 bg-emeraldDeep hover:bg-obsidian text-white text-sm font-semibold px-4 py-2.5 rounded-xl shadow-sm transition">
             <svg class="w-4 h-4 text-gold-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
             </svg>
@@ -313,7 +318,7 @@
       <a href="#advisory" onclick="closeMobileMenu()" class="block px-4 py-3 rounded-xl font-semibold text-emeraldDeep hover:bg-sageSoft" data-i18n="nav_advisory">पीक सल्ला</a>
       <a href="#showroom" onclick="closeMobileMenu()" class="block px-4 py-3 rounded-xl font-semibold text-emeraldDeep hover:bg-sageSoft" data-i18n="nav_showroom">दुकान व नकाशा</a>
       <div class="grid grid-cols-2 gap-3 pt-3">
-        <a id="mob-call-link" href="tel:+919822000000" class="text-center bg-emeraldDeep text-white font-semibold py-3 rounded-xl text-sm" data-i18n="btn_call">कॉल करा</a>
+        <a id="mob-call-link" href="tel:+919096779722" class="text-center bg-emeraldDeep text-white font-semibold py-3 rounded-xl text-sm" data-i18n="btn_call">कॉल करा</a>
         <button type="button" onclick="closeMobileMenu(); openDirectWhatsApp();" class="text-center bg-gold text-obsidian font-bold py-3 rounded-xl text-sm" data-i18n="btn_wa_direct">व्हॉट्सॲप ऑर्डर</button>
       </div>
     </div>
@@ -333,7 +338,7 @@
         <div class="lg:col-span-7 space-y-6">
           <div class="hero-stagger hero-delay-1 inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full glass-dark border border-gold/40 text-gold-light text-xs sm:text-sm font-semibold tracking-wide">
             <span class="text-base">🌾</span>
-            <span data-i18n="hero_badge">अधिकृत कृषी निविष्ठा केंद्र • बावडा, ता. इंदापूर</span>
+            <span data-i18n="hero_badge">अधिकृत कृषी निविष्ठा केंद्र • महाळुंग, ता. माळशिरस</span>
           </div>
 
           <h1 class="hero-stagger hero-delay-2 font-display text-3xl sm:text-5xl lg:text-[3.35rem] font-bold leading-[1.18] tracking-tight text-white">
@@ -342,7 +347,7 @@
           </h1>
 
           <p class="hero-stagger hero-delay-3 text-base sm:text-lg text-emerald-100/90 max-w-2xl leading-relaxed" data-i18n="hero_subtitle">
-            बावडा, इंदापूर आणि पुणे जिल्ह्यातील प्रगतशील शेतकऱ्यांसाठी १००% अस्सल व प्रमाणित बियाणे, संतुलित सूक्ष्म अन्नद्रव्ये, प्रभावी पीक संरक्षण आणि आधुनिक ठिबक सिंचन साहित्याचे हक्काचे केंद्र.
+            महाळुंग, अकलूज, माळशिरस आणि सोलापूर जिल्ह्यातील प्रगतशील शेतकऱ्यांसाठी १००% अस्सल व प्रमाणित बियाणे, संतुलित सूक्ष्म अन्नद्रव्ये, प्रभावी पीक संरक्षण आणि आधुनिक ठिबक सिंचन साहित्याचे हक्काचे केंद्र.
           </p>
 
           <!-- Dual Luxury CTAs -->
@@ -397,7 +402,7 @@
             <div class="flex items-center justify-between border-b border-white/15 pb-4">
               <div>
                 <span class="text-[11px] uppercase tracking-widest text-gold-light font-bold" data-i18n="tele_tag">
-                  इंदापूर व बावडा पीक मार्गदर्शन
+                  माळशिरस व महाळुंग पीक मार्गदर्शन
                 </span>
                 <h2 class="font-display text-xl font-bold text-white mt-0.5" data-i18n="tele_title">
                   हंगामी कृषी सज्जता
@@ -489,7 +494,7 @@
             विक्रमी उत्पादनासाठी दर्जेदार कृषी उत्पादने
           </h2>
           <p class="text-sm sm:text-base text-slate-600" data-i18n="cat_desc">
-            वर्गवारी किंवा पिकाच्या अवस्थेनुसार उत्पादने निवडा. त्वरित दर जाणून घेण्यासाठी व बावडा दुकानात माल राखीव ठेवण्यासाठी व्हॉट्सॲप ऑर्डर यादीत जोडा.
+            वर्गवारी किंवा पिकाच्या अवस्थेनुसार उत्पादने निवडा. त्वरित दर जाणून घेण्यासाठी व महाळुंग दुकानात माल राखीव ठेवण्यासाठी व्हॉट्सॲप ऑर्डर यादीत जोडा.
           </p>
         </div>
 
@@ -546,7 +551,7 @@
       <!-- Empty State -->
       <div id="catalog-empty" class="hidden text-center py-14 bg-white rounded-3xl border border-slate-200">
         <p class="font-display text-xl font-bold text-emeraldDeep" data-i18n="empty_title">जुळणारी उत्पादने आढळली नाहीत</p>
-        <p class="text-sm text-slate-500 mt-1" data-i18n="empty_sub">आमच्या बावडा दुकानातील सर्व उत्पादने पाहण्यासाठी फिल्टर रीसेट करा.</p>
+        <p class="text-sm text-slate-500 mt-1" data-i18n="empty_sub">आमच्या महाळुंग दुकानातील सर्व उत्पादने पाहण्यासाठी फिल्टर रीसेट करा.</p>
         <button type="button" onclick="resetCatalogFilters()" class="mt-4 px-5 py-2.5 rounded-xl bg-emeraldDeep text-white text-xs font-semibold" data-i18n="empty_btn">सर्व फिल्टर काढा</button>
       </div>
 
@@ -570,7 +575,7 @@
             यशोगाथा व प्रगतशील शेतकरी
           </h2>
           <p class="text-sm sm:text-base text-emerald-100/85" data-i18n="gal_subtitle">
-            श्री साईनाथ कृषी भांडारच्या मार्गदर्शनाखाली आणि प्रमाणित निविष्ठांच्या वापरातून बावडा व इंदापूर परिसरातील शेतकऱ्यांनी घेतलेले विक्रमी उत्पादन.
+            श्री साईनाथ कृषी भांडारच्या मार्गदर्शनाखाली आणि प्रमाणित निविष्ठांच्या वापरातून महाळुंग, अकलूज व माळशिरस परिसरातील शेतकऱ्यांनी घेतलेले विक्रमी उत्पादन.
           </p>
         </div>
 
@@ -594,13 +599,13 @@
       <div class="text-center max-w-3xl mx-auto mb-10 space-y-3 reveal">
         <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gold-soft text-gold-dark text-xs font-bold uppercase tracking-wider border border-gold/30">
           <span>🔬</span>
-          <span data-i18n="adv_eyebrow">प्रादेशिक कृषी सल्लागार कक्ष • बावडा व इंदापूर</span>
+          <span data-i18n="adv_eyebrow">प्रादेशिक कृषी सल्लागार कक्ष • महाळुंग व माळशिरस</span>
         </span>
         <h2 class="font-display text-3xl sm:text-4xl font-bold text-emeraldDeep" data-i18n="adv_title">
           आधुनिक पीक व मृदा सल्ला केंद्र
         </h2>
         <p class="text-sm sm:text-base text-slate-600" data-i18n="adv_subtitle">
-          तुमचे पीक, वाढीची अवस्था आणि इंदापूर/बावडा परिसरातील जमीन व पाण्याचा प्रकार निवडा आणि त्वरित खत मात्रा व फवारणी वेळापत्रक मिळवा.
+          तुमचे पीक, वाढीची अवस्था आणि महाळुंग/अकलूज–टेंभुर्णी रोड परिसरातील जमीन व पाण्याचा प्रकार निवडा आणि त्वरित खत मात्रा व फवारणी वेळापत्रक मिळवा.
         </p>
       </div>
 
@@ -613,7 +618,7 @@
               <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-gold"></span>
             </span>
             <span class="text-xs font-bold uppercase tracking-wider text-gold-light" data-i18n="alert_badge">
-              बावडा-इंदापूर हवामान व कीड इशारा:
+              माळशिरस-महाळुंग हवामान व कीड इशारा:
             </span>
           </div>
           <p id="agro-alert-text" class="text-xs sm:text-sm text-emerald-100/95 font-medium leading-relaxed flex-1"></p>
@@ -673,7 +678,7 @@
               </label>
               <div class="grid grid-cols-2 gap-2 bg-white p-1.5 rounded-2xl border border-slate-200">
                 <button type="button" id="soil-btn-canal" onclick="setDiagnosticSoil('canal')" class="px-3 py-2 rounded-xl text-xs font-bold transition bg-emeraldDeep text-white shadow-sm">
-                  💧 <span data-i18n="soil_canal">उजनी कालवा बागायत</span>
+                  💧 <span data-i18n="soil_canal">नीरा उजवा कालवा बागायत</span>
                 </button>
                 <button type="button" id="soil-btn-black" onclick="setDiagnosticSoil('black')" class="px-3 py-2 rounded-xl text-xs font-semibold transition text-slate-700 hover:bg-sageSoft">
                   🪨 <span data-i18n="soil_black">मध्यम काळी / विहीर</span>
@@ -762,19 +767,19 @@
             <div class="space-y-3 relative z-10">
               <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold/20 border border-gold/40 text-gold-light text-[11px] font-bold uppercase tracking-wider">
                 <span>📸</span>
-                <span data-i18n="photo_tag">त्वरित पीक चिकित्सालय • बावडा</span>
+                <span data-i18n="photo_tag">त्वरित पीक चिकित्सालय • महाळुंग</span>
               </div>
               <h3 class="font-display text-xl sm:text-2xl font-bold text-white leading-snug" data-i18n="photo_title">
                 पाने पिवळी पडणे, अळी किंवा तेल्या डाग दिसत आहेत?
               </h3>
               <p class="text-xs sm:text-sm text-emerald-100/90 leading-relaxed" data-i18n="photo_desc">
-                सूर्यप्रकाशात पिकाच्या बाधित पानाचा, खोडाचा किंवा फळाचा स्पष्ट फोटो काढा आणि अचूक निदानासाठी थेट आमच्या बावडा कृषी सल्लागार कक्षाच्या व्हॉट्सॲपवर पाठवा.
+                सूर्यप्रकाशात पिकाच्या बाधित पानाचा, खोडाचा किंवा फळाचा स्पष्ट फोटो काढा आणि अचूक निदानासाठी थेट आमच्या महाळुंग कृषी सल्लागार कक्षाच्या व्हॉट्सॲपवर पाठवा.
               </p>
 
               <ul class="space-y-2 text-xs text-emerald-100/90 pt-1">
                 <li class="flex items-center gap-2">
                   <span class="text-gold-light font-bold">✓</span>
-                  <span data-i18n="photo_pt1">इंदापूर परिसरातील जमीन व पाण्याच्या सामू (pH) नुसार मोफत सल्ला</span>
+                  <span data-i18n="photo_pt1">माळशिरस परिसरातील जमीन व पाण्याच्या सामू (pH) नुसार मोफत सल्ला</span>
                 </li>
                 <li class="flex items-center gap-2">
                   <span class="text-gold-light font-bold">✓</span>
@@ -808,16 +813,16 @@
           आमच्या दुकानाला भेट द्या
         </span>
         <h2 class="font-display text-3xl sm:text-4xl font-bold text-emeraldDeep" data-i18n="loc_title">
-          श्री साईनाथ कृषी भांडार, बावडा
+          श्री साईनाथ कृषी भांडार, महाळुंग
         </h2>
         <p class="text-sm sm:text-base text-slate-600" data-i18n="loc_subtitle">
-          बावडा, ता. इंदापूर येथे मध्यवर्ती ठिकाणी स्थित. प्रत्यक्ष पीक सल्ल्यासाठी दुकानात या किंवा खाली आपली मागणी नोंदवा.
+          कुबेर नर्सरी जवळ, अकलूज–टेंभुर्णी रोड, महाळुंग येथे मध्यवर्ती ठिकाणी स्थित. प्रत्यक्ष पीक सल्ल्यासाठी दुकानात या किंवा खाली आपली मागणी नोंदवा.
         </p>
       </div>
 
       <div class="grid lg:grid-cols-12 gap-8 items-stretch">
 
-        <!-- Left Column: Store Details + Embedded Bawada Google Map -->
+        <!-- Left Column: Store Details + Embedded Mahalung Google Map -->
         <div class="lg:col-span-6 flex flex-col justify-between bg-white rounded-3xl p-6 sm:p-8 border border-emeraldDeep/10 shadow-editorial space-y-6 reveal">
           <div class="space-y-5">
             <div class="flex items-center justify-between border-b border-slate-100 pb-4">
@@ -827,7 +832,7 @@
                   <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-500 opacity-75"></span>
                   <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-600"></span>
                 </span>
-                <span data-i18n="store_open_pill">आठवड्याचे ७ दिवस सुरू</span>
+                <span data-i18n="store_open_pill">दररोज सुरू</span>
               </span>
             </div>
 
@@ -842,7 +847,7 @@
                 <div>
                   <p class="font-bold text-emeraldDeep" data-i18n="lbl_addr">दुकानाचा पत्ता</p>
                   <p id="display-shop-address" class="text-slate-600 mt-0.5 leading-relaxed" data-i18n="val_addr">
-                    श्री साईनाथ कृषी भांडार, मेन मार्केट रोड, बावडा, ता. इंदापूर, जि. पुणे, महाराष्ट्र ४१३१०३
+                    कुबेर नर्सरी जवळ, गट नं. २, अकलूज–टेंभुर्णी रोड, महाळुंग, ता. माळशिरस, जि. सोलापूर, महाराष्ट्र ४१३११२
                   </p>
                 </div>
               </div>
@@ -852,14 +857,14 @@
                   <span class="text-lg">🕒</span>
                   <div>
                     <p class="font-bold text-xs text-emeraldDeep" data-i18n="lbl_hours">दुकानाची वेळ</p>
-                    <p id="display-shop-hours" class="text-xs text-slate-600 mt-0.5" data-i18n="val_hours">सकाळी ८:०० ते रात्री ८:३० (सोम–रवि)</p>
+                    <p id="display-shop-hours" class="text-xs text-slate-600 mt-0.5" data-i18n="val_hours">सकाळी ८:०० ते रात्री ८:३० (दररोज सुरू)</p>
                   </div>
                 </div>
                 <div class="flex items-start gap-3 bg-parchment p-3.5 rounded-2xl">
                   <span class="text-lg">📞</span>
                   <div>
                     <p class="font-bold text-xs text-emeraldDeep" data-i18n="lbl_helpline">शेतकरी संपर्क क्रमांक</p>
-                    <p id="display-shop-phone" class="text-xs font-bold text-slate-800 mt-0.5">+91 98220 00000</p>
+                    <p id="display-shop-phone" class="text-xs font-bold text-slate-800 mt-0.5">+91 90967 79722</p>
                   </div>
                 </div>
               </div>
@@ -869,15 +874,15 @@
           <div class="space-y-3">
             <div class="rounded-2xl overflow-hidden border border-emeraldDeep/15 h-60 sm:h-64 bg-parchmentDark relative">
               <iframe
-                title="श्री साईनाथ कृषी भांडार बावडा नकाशा"
-                src="https://maps.google.com/maps?q=Bawada,Maharashtra,India&t=&z=14&ie=UTF8&iwloc=&output=embed"
+                title="श्री साईनाथ कृषी भांडार महाळुंग नकाशा"
+                src="https://maps.google.com/maps?q=Shree%20Sainath%20krushi%20Bhandar%2C%20Gate%20No-2%2C%20Akluj%20-%20Tembhurni%20Rd%2C%20Mahalung&t=&z=16&ie=UTF8&iwloc=&output=embed"
                 class="w-full h-full border-0"
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade">
               </iframe>
             </div>
             <div class="flex flex-wrap gap-3">
-              <a href="https://maps.google.com/?q=Bawada,Maharashtra,India" target="_blank" rel="noopener" class="flex-1 inline-flex items-center justify-center gap-2 bg-parchmentDark hover:bg-sageSoft text-emeraldDeep font-semibold py-2.5 px-4 rounded-xl text-xs transition border border-emeraldDeep/15">
+              <a href="https://maps.app.goo.gl/DJa6MzcmTFemU5Fk9?g_st=ac" target="_blank" rel="noopener" class="flex-1 inline-flex items-center justify-center gap-2 bg-parchmentDark hover:bg-sageSoft text-emeraldDeep font-semibold py-2.5 px-4 rounded-xl text-xs transition border border-emeraldDeep/15">
                 <span>🧭</span>
                 <span data-i18n="btn_directions">गूगल मॅपमध्ये रस्ता पहा</span>
               </a>
@@ -896,7 +901,7 @@
               दरपत्रक किंवा पीक सल्ल्यासाठी विचारणा करा
             </h3>
             <p class="text-xs sm:text-sm text-slate-500 mt-1" data-i18n="form_subheading">
-              खाली आपली माहिती भरा. आमचा बावडा येथील प्रतिनिधी उत्पादनाची उपलब्धता व अचूक मात्रेसह त्वरित संपर्क करेल.
+              खाली आपली माहिती भरा. आमचा महाळुंग येथील प्रतिनिधी उत्पादनाची उपलब्धता व अचूक मात्रेसह त्वरित संपर्क करेल.
             </p>
           </div>
 
@@ -915,7 +920,7 @@
             <div class="grid sm:grid-cols-2 gap-4">
               <div>
                 <label for="inp-village" class="block text-xs font-bold text-slate-700 mb-1.5" data-i18n="f_village">गाव / परिसर *</label>
-                <input type="text" id="inp-village" required placeholder="उदा. बावडा / निरवांगी / रेडणी" class="w-full px-4 py-3 rounded-xl bg-parchment border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-gold" />
+                <input type="text" id="inp-village" required placeholder="उदा. महाळुंग / अकलूज / यशवंतनगर" class="w-full px-4 py-3 rounded-xl bg-parchment border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-gold" />
               </div>
               <div>
                 <label for="inp-crop" class="block text-xs font-bold text-slate-700 mb-1.5" data-i18n="f_crop">पीक व क्षेत्रफळ</label>
@@ -966,14 +971,14 @@
             </div>
             <div>
               <h3 class="font-display text-xl font-bold text-white" data-i18n="shop_name">श्री साईनाथ कृषी भांडार</h3>
-              <p class="text-xs text-gold-light" data-i18n="shop_sub">बावडा, ता. इंदापूर, जि. पुणे</p>
+              <p class="text-xs text-gold-light" data-i18n="shop_sub">महाळुंग, ता. माळशिरस, जि. सोलापूर</p>
             </div>
           </div>
           <p class="text-xs sm:text-sm text-emerald-200/80 leading-relaxed max-w-md" data-i18n="footer_about">
-            बावडा, इंदापूर तालुका आणि पुणे जिल्ह्यातील शेतकरी बांधवांच्या सेवेसाठी प्रमाणित बियाणे, संतुलित खते आणि प्रामाणिक कृषी मार्गदर्शनास समर्पित.
+            महाळुंग, अकलूज, माळशिरस तालुका आणि सोलापूर जिल्ह्यातील शेतकरी बांधवांच्या सेवेसाठी प्रमाणित बियाणे, संतुलित खते आणि प्रामाणिक कृषी मार्गदर्शनास समर्पित.
           </p>
           <div class="inline-block px-3.5 py-2 rounded-xl bg-white/5 border border-white/10 text-[11px] text-emerald-200">
-            <span data-i18n="footer_gst">शासकीय कृषी परवाना व GST नोंदणीकृत • बावडा, पुणे ४१३१०३</span>
+            <span data-i18n="footer_gst">शासकीय कृषी परवाना व GST नोंदणीकृत • महाळुंग, ता. माळशिरस ४१३११२</span>
           </div>
         </div>
 
@@ -992,7 +997,7 @@
           <div class="bg-emeraldDeep/70 border border-gold/25 rounded-2xl p-5 space-y-2">
             <h4 class="text-sm font-bold text-gold-light" data-i18n="footer_kisan_title">शेतकरी सहाय्य व हेल्पलाईन</h4>
             <p class="text-xs text-emerald-100" data-i18n="footer_kisan_toll">राष्ट्रीय किसान कॉल सेंटर: <strong class="text-white">१८००-१८०-१५५१</strong></p>
-            <p class="text-xs text-emerald-200"><span data-i18n="footer_store_num">बावडा दुकान थेट संपर्क:</span> <strong id="footer-phone-text" class="text-white">+91 98220 00000</strong></p>
+            <p class="text-xs text-emerald-200"><span data-i18n="footer_store_num">महाळुंग दुकान थेट संपर्क:</span> <strong id="footer-phone-text" class="text-white">+91 90967 79722</strong></p>
           </div>
 
           <a href="#home" class="inline-flex items-center gap-2 text-xs font-semibold text-gold-light hover:text-white transition">
@@ -1005,7 +1010,7 @@
 
       <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-emerald-300/65">
         <p>© <span id="year-now"></span> <span data-i18n="shop_name">श्री साईनाथ कृषी भांडार</span>. <span data-i18n="rights">सर्व हक्क राखीव.</span></p>
-        <p data-i18n="jai_kisan">जय जवान, जय किसान • बावडा, महाराष्ट्र 🇮🇳</p>
+        <p data-i18n="jai_kisan">जय जवान, जय किसान • महाळुंग, महाराष्ट्र 🇮🇳</p>
       </div>
     </div>
   </footer>
@@ -1063,7 +1068,7 @@
   <aside id="order-drawer" class="fixed top-0 right-0 z-50 h-full w-full max-w-md bg-parchment shadow-2xl transform translate-x-full transition-transform duration-300 ease-out flex flex-col justify-between border-l border-emeraldDeep/15" aria-label="व्हॉट्सॲप ऑर्डर यादी">
     <div class="bg-emeraldDeep text-white p-5 sm:p-6 flex items-center justify-between">
       <div>
-        <span class="text-[11px] uppercase tracking-wider text-gold-light font-bold" data-i18n="drawer_tag">बावडा दुकान जलद ऑर्डर</span>
+        <span class="text-[11px] uppercase tracking-wider text-gold-light font-bold" data-i18n="drawer_tag">महाळुंग दुकान जलद ऑर्डर</span>
         <h3 class="font-display text-xl font-bold" data-i18n="drawer_title">माझी व्हॉट्सॲप ऑर्डर यादी</h3>
       </div>
       <button type="button" onclick="toggleOrderDrawer(false)" class="p-2 rounded-xl bg-white/10 hover:bg-white/20 text-white" aria-label="ऑर्डर यादी बंद करा">✕</button>
@@ -1073,9 +1078,9 @@
 
     <div class="p-5 bg-white border-t border-slate-200 space-y-3">
       <p class="text-xs text-slate-500" data-i18n="drawer_note">
-        निवडलेल्या वस्तूंचे ताजे दर जाणून घेण्यासाठी व बावडा दुकानात ऑर्डर राखीव ठेवण्यासाठी थेट व्हॉट्सॲपवर यादी पाठवा.
+        निवडलेल्या वस्तूंचे ताजे दर जाणून घेण्यासाठी व महाळुंग दुकानात ऑर्डर राखीव ठेवण्यासाठी थेट व्हॉट्सॲपवर यादी पाठवा.
       </p>
-      <button type="button" id="send-order-wa-btn" onclick="sendCompiledWhatsAppOrder()" class="w-full flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 disabled:bg-slate-300 disabled:cursor-not-allowed text-white font-bold py-3.5 px-5 rounded-2xl shadow-md transition text-sm">
+      <button type="button" id="send-order-wa-btn" onclick="sendCompiledWhatsAppOrder()" disabled class="btn-shimmer w-full inline-flex items-center justify-center gap-2 bg-gold hover:bg-gold-light disabled:opacity-50 disabled:cursor-not-allowed text-obsidian font-extrabold py-3.5 px-5 rounded-2xl shadow-gold-glow transition text-xs sm:text-sm">
         <span>💬</span>
         <span data-i18n="drawer_send_btn">संपूर्ण यादी व्हॉट्सॲपवर पाठवा</span>
       </button>
@@ -1089,22 +1094,26 @@
     <span id="float-badge" class="inline-flex items-center justify-center min-w-[22px] h-5.5 px-1.5 rounded-full bg-gold text-obsidian text-xs font-extrabold">0</span>
   </button>
 
-  <!-- Floating Golden & Emerald Background Music Player Pill (Bottom Left — web_site/music) -->
-  <div id="music-player-pill" class="fixed bottom-5 left-5 z-40 inline-flex items-center gap-2.5 bg-obsidian/95 backdrop-blur-md text-white pl-3 pr-2.5 py-2 rounded-full shadow-2xl border border-gold/50 eq-paused">
+  <!-- Floating Golden & Emerald Krishna Flute YouTube Music Player Pill (Bottom Left) -->
+  <div id="music-player-pill" class="fixed bottom-5 left-5 z-40 inline-flex items-center gap-2.5 bg-obsidian/95 backdrop-blur-md text-white pl-3.5 pr-2.5 py-2 rounded-full shadow-2xl border border-gold/50 eq-waiting transition-all duration-300">
     <div class="flex items-end gap-0.5 h-4 w-4 shrink-0" aria-hidden="true">
       <span class="eq-bar w-1 h-3 bg-gold-light rounded-full" style="animation-delay: 0s;"></span>
       <span class="eq-bar w-1 h-4 bg-gold rounded-full" style="animation-delay: 0.2s;"></span>
       <span class="eq-bar w-1 h-2.5 bg-emerald-400 rounded-full" style="animation-delay: 0.4s;"></span>
     </div>
-    <div class="leading-tight max-w-[135px] sm:max-w-[180px] truncate">
-      <span id="music-status-label" class="block text-[11px] font-bold text-gold-light truncate" data-i18n="music_title">शेतकरी पार्श्वसंगीत</span>
-      <span id="music-sub-label" class="block text-[10px] text-emerald-200/85 truncate" data-i18n="music_tap">सुरू करण्यासाठी स्पर्श करा</span>
+    <div class="leading-tight max-w-[165px] sm:max-w-[220px] truncate">
+      <span id="music-status-label" class="block text-[11px] font-bold text-gold-light truncate">शेतकरी पार्श्वसंगीत • कृष्ण बासरी</span>
+      <span id="music-sub-label" class="block text-[10px] text-amber-200/95 truncate animate-pulse">आवाजासाठी स्क्रीनवर स्पर्श करा</span>
     </div>
-    <button type="button" id="music-toggle-btn" onclick="toggleBackgroundMusic()" class="w-8 h-8 rounded-full bg-gold hover:bg-gold-light text-obsidian flex items-center justify-center font-bold text-xs shadow transition shrink-0" aria-label="पार्श्वसंगीत सुरू किंवा बंद करा">
-      ▶
+    <button type="button" id="music-toggle-btn" onclick="toggleBackgroundMusic()" class="w-8 h-8 rounded-full bg-gold hover:bg-gold-light text-obsidian flex items-center justify-center font-bold text-xs shadow transition shrink-0" aria-label="कृष्ण बासरी पार्श्वसंगीत सुरू किंवा बंद करा">
+      🔇
     </button>
   </div>
-  <audio id="bg-music-audio" autoplay loop preload="auto" playsinline></audio>
+
+  <!-- Non-zero 1px x 1px Active YouTube Background Player Container (prevents browser 0x0 throttling) -->
+  <div id="yt-bg-wrapper" style="position: fixed; bottom: 0; left: 0; width: 1px; height: 1px; opacity: 0.01; pointer-events: none; overflow: hidden; z-index: 1;" aria-hidden="true">
+    <div id="yt-bg-player"></div>
+  </div>
 
   <!-- Success Farm Lightbox Modal -->
   <div id="farm-lightbox-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-obsidian/85 backdrop-blur-md" role="dialog" aria-modal="true" onclick="if(event.target===this) closeFarmLightbox()">
@@ -1134,30 +1143,28 @@
   <script>
     /**
      * =====================================================================
-     * 1. दुकान माहिती (SHOP_CONFIG) — आपला मोबाईल क्रमांक व पत्ता येथे बदला
+     * 1. दुकान माहिती (SHOP_CONFIG) — महाळुंग, ता. माळशिरस, जि. सोलापूर
      * =====================================================================
      */
     const SHOP_CONFIG = {
-      whatsappNumber: "919822000000", // तुमचा 10 अंकी मोबाईल नंबर 91 जोडून टाका (उदा. 919822123456)
-      phoneDisplay: "+91 98220 00000",
-      addressMr: "श्री साईनाथ कृषी भांडार, मेन मार्केट रोड, बावडा, ता. इंदापूर, जि. पुणे, महाराष्ट्र ४१३१०३",
-      addressEn: "Shri Sainath Krushi Bhandar, Main Market Road, Bawada, Tal. Indapur, Dist. Pune, Maharashtra 413103",
-      hoursMr: "सकाळी ८:०० ते रात्री ८:३० (सोम–रवि)",
-      hoursEn: "8:00 AM – 8:30 PM (Mon–Sun)"
+      whatsappNumber: "919096779722",
+      phoneDisplay: "+91 90967 79722",
+      addressMr: "कुबेर नर्सरी जवळ, गट नं. २, अकलूज–टेंभुर्णी रोड, महाळुंग, ता. माळशिरस, जि. सोलापूर, महाराष्ट्र ४१३११२",
+      addressEn: "Near Kuber Nursery, Gat No. 2, Akluj–Tembhurni Road, Mahalung, Taluka Malshiras, District Solapur, Maharashtra 413112",
+      hoursMr: "सकाळी ८:०० ते रात्री ८:३० (दररोज सुरू)",
+      hoursEn: "8:00 AM – 8:30 PM (Open Daily)",
+      mapsUrl: "https://maps.app.goo.gl/DJa6MzcmTFemU5Fk9?g_st=ac"
     };
 
     /**
      * =====================================================================
-     * 2. गुगल ड्राईव्ह 'web_site' फोल्डर सेटिंग (photo व music)
-     * तुमच्या Google Drive मधील 'web_site/photo' व 'web_site/music' मधील
-     * Share Link किंवा File ID खाली पेस्ट करा.
+     * 2. यूट्यूब कृष्ण बासरी संगीत व 'web_site/photo' यशोगाथा सेटिंग
      * =====================================================================
      */
     const MEDIA_CONFIG = {
-      // Folder: web_site/music — येथे गाण्याची Google Drive लिंक किंवा 'music/song.mp3' द्या:
-      musicSource: "music/song.mp3",
-      musicTitleMr: "शेतकरी पार्श्वसंगीत • श्री साईनाथ कृषी",
-      musicTitleEn: "Farmer Background Music • Shri Sainath Krushi",
+      youtubeVideoId: "xNBKYG6inPw",
+      musicTitleMr: "शेतकरी पार्श्वसंगीत • कृष्ण बासरी",
+      musicTitleEn: "Krishna Flute Ambient • Peaceful",
 
       // Folder: web_site/photo — येथे यशस्वी शेतीचे फोटो लिंक द्या:
       photos: [
@@ -1165,10 +1172,10 @@
           src: "photo/farm1.jpg",
           cropMr: "विक्रमी ऊस उत्पादन (९५+ टन/एकर)",
           cropEn: "Record Sugarcane Yield (95+ Tons/Acre)",
-          farmerMr: "प्रगतशील शेतकरी, बावडा",
-          farmerEn: "Progressive Farmer, Bawada",
-          villageMr: "📍 बावडा, ता. इंदापूर",
-          villageEn: "📍 Bawada, Tal. Indapur",
+          farmerMr: "प्रगतशील शेतकरी, महाळुंग",
+          farmerEn: "Progressive Farmer, Mahalung",
+          villageMr: "📍 महाळुंग, ता. माळशिरस",
+          villageEn: "📍 Mahalung, Tal. Malshiras",
           descMr: "ठिबक सिंचन व संतुलित विद्राव्य NPK (१९:१९:१९ व ००:५२:३४) वेळापत्रकामुळे उसाची जाडी व वजन विक्रमी मिळाले.",
           descEn: "Achieved exceptional cane girth and tonnage using drip fertigation and balanced NPK (19:19:19 & 00:52:34) schedule.",
           inputsMr: "वापरलेली उत्पादने: विद्राव्य NPK + चिलेटेड सूक्ष्म अन्नद्रव्ये",
@@ -1179,10 +1186,10 @@
           src: "photo/farm2.jpg",
           cropMr: "निर्यातक्षम डाळिंब बागायत",
           cropEn: "Export-Quality Pomegranate Orchard",
-          farmerMr: "यशस्वी डाळिंब उत्पादक, निरवांगी",
-          farmerEn: "Pomegranate Grower, Nirwangi",
-          villageMr: "📍 निरवांगी परिसर, इंदापूर",
-          villageEn: "📍 Nirwangi Belt, Indapur",
+          farmerMr: "यशस्वी डाळिंब उत्पादक, अकलूज परिसर",
+          farmerEn: "Pomegranate Grower, Akluj Belt",
+          villageMr: "📍 अकलूज–टेंभुर्णी रोड परिसर",
+          villageEn: "📍 Akluj–Tembhurni Road Belt",
           descMr: "तेल्या रोग प्रतिबंधात्मक वेळापत्रक व ००:००:५० पालाश फवारणीमुळे डाळिंबाला आकर्षक लाल रंग व उत्तम बाजारभाव मिळाला.",
           descEn: "Preventive Telya shield and 00:00:50 potash foliar nutrition delivered deep ruby fruit color and top market rates.",
           inputsMr: "वापरलेली उत्पादने: तेल्या संरक्षण संच + NPK ००:००:५०",
@@ -1193,10 +1200,10 @@
           src: "photo/farm3.jpg",
           cropMr: "भरघोस लाल कांदा व मका पीक",
           cropEn: "High-Yield Red Onion & Hybrid Maize",
-          farmerMr: "प्रगतशील शेतकरी, रेडणी",
-          farmerEn: "Progressive Farmer, Redni",
-          villageMr: "📍 रेडणी, ता. इंदापूर",
-          villageEn: "📍 Redni, Tal. Indapur",
+          farmerMr: "प्रगतशील शेतकरी, माळशिरस",
+          farmerEn: "Progressive Farmer, Malshiras",
+          villageMr: "📍 ता. माळशिरस, जि. सोलापूर",
+          villageEn: "📍 Tal. Malshiras, Dist. Solapur",
           descMr: "प्रमाणित F1 संकरित बियाणे आणि वेळेवर कीड-करपा नियंत्रणामुळे कांद्याचा आकार एकसमान व साठवण क्षमता उत्तम राहिली.",
           descEn: "Certified F1 hybrid seeds and timely blight/thrips protection produced uniform bulb sizing and strong shelf life.",
           inputsMr: "वापरलेली उत्पादने: प्रमाणित F1 बियाणे + बुरशीनाशक संच",
@@ -1207,10 +1214,10 @@
           src: "photo/farm4.jpg",
           cropMr: "सोयाबीन व हरभरा विक्रमी उतारा",
           cropEn: "Bumper Soybean & Harbhara Harvest",
-          farmerMr: "शेतकरी गट, बावडा परिसर",
-          farmerEn: "Farmer Group, Bawada Region",
-          villageMr: "📍 बावडा, जि. पुणे",
-          villageEn: "📍 Bawada, Dist. Pune",
+          farmerMr: "शेतकरी गट, महाळुंग परिसर",
+          farmerEn: "Farmer Group, Mahalung Region",
+          villageMr: "📍 महाळुंग, जि. सोलापूर",
+          villageEn: "📍 Mahalung, Dist. Solapur",
           descMr: "रायझोबियम बीजप्रक्रिया व फुलधारणेवेळी बोरॉन + ००:५२:३४ फवारणी केल्याने शेंगांची संख्या दुपटीने वाढली.",
           descEn: "Seed treatment with Rhizobium and flowering-stage Boron + 00:52:34 spray doubled pod retention.",
           inputsMr: "वापरलेली उत्पादने: KDS-726 बियाणे + ००:५२:३४ व बोरॉन",
@@ -1264,7 +1271,7 @@
         <path d="M0 390 Q220 320 440 385 T800 350 L800 520 L0 520 Z" fill="#062619" fill-opacity="0.65"/>
         <text x="400" y="235" font-size="84" text-anchor="middle">${p.emoji}</text>
         <text x="400" y="305" font-family="sans-serif" font-size="22" font-weight="bold" fill="${p.accent}" text-anchor="middle">श्री साईनाथ कृषी भांडार • यशोगाथा</text>
-        <text x="400" y="336" font-family="sans-serif" font-size="15" fill="#d1fae5" text-anchor="middle">बावडा, ता. इंदापूर, जि. पुणे</text>
+        <text x="400" y="336" font-family="sans-serif" font-size="15" fill="#d1fae5" text-anchor="middle">महाळुंग, ता. माळशिरस, जि. सोलापूर</text>
       </svg>`;
       return `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svg)}`;
     }
@@ -1295,11 +1302,11 @@
     // 100% Complete Bilingual Dictionary (Marathi First, English Second)
     const DICT = {
       mr: {
-        top_status: "आज दुकान सुरू आहे • सकाळी ८:०० ते रात्री ८:३०",
-        top_loc: "बावडा, ता. इंदापूर, जि. पुणे",
+        top_status: "आज दुकान सुरू आहे • सकाळी ८:०० ते रात्री ८:३० (दररोज सुरू)",
+        top_loc: "महाळुंग (अकलूज–टेंभुर्णी रोड), ता. माळशिरस, जि. सोलापूर",
         top_cert: "शासकीय परवानाधारक कृषी निविष्ठा केंद्र • १००% GST पक्के बिल",
         shop_name: "श्री साईनाथ कृषी भांडार",
-        shop_sub: "बावडा, ता. इंदापूर, जि. पुणे",
+        shop_sub: "महाळुंग, ता. माळशिरस, जि. सोलापूर",
         nav_home: "मुख्यपृष्ठ",
         nav_catalog: "उत्पादने",
         nav_gallery: "यशोगाथा",
@@ -1308,17 +1315,17 @@
         btn_order_list: "ऑर्डर यादी",
         btn_call: "कॉल करा",
         btn_wa_direct: "व्हॉट्सॲप ऑर्डर",
-        hero_badge: "अधिकृत कृषी निविष्ठा केंद्र • बावडा, ता. इंदापूर",
+        hero_badge: "अधिकृत कृषी निविष्ठा केंद्र • महाळुंग, ता. माळशिरस",
         hero_title_1: "शास्त्रीय मार्गदर्शन आणि",
         hero_title_2: "शेतकऱ्यांच्या विश्वासातून समृद्ध शेती",
-        hero_subtitle: "बावडा, इंदापूर आणि पुणे जिल्ह्यातील प्रगतशील शेतकऱ्यांसाठी १००% अस्सल व प्रमाणित बियाणे, संतुलित सूक्ष्म अन्नद्रव्ये, प्रभावी पीक संरक्षण आणि आधुनिक ठिबक सिंचन साहित्याचे हक्काचे केंद्र.",
+        hero_subtitle: "महाळुंग, अकलूज, माळशिरस आणि सोलापूर जिल्ह्यातील प्रगतशील शेतकऱ्यांसाठी १००% अस्सल व प्रमाणित बियाणे, संतुलित सूक्ष्म अन्नद्रव्ये, प्रभावी पीक संरक्षण आणि आधुनिक ठिबक सिंचन साहित्याचे हक्काचे केंद्र.",
         hero_cta_primary: "उत्पादने पहा",
         hero_cta_secondary: "थेट व्हॉट्सॲप ऑर्डर",
         metric_years: "वर्षांचा विश्वास",
         metric_1: "समाधानी शेतकरी",
         metric_products: "प्रमाणित उत्पादने",
         metric_2: "अस्सल व दर्जेदार ब्रँड्स",
-        tele_tag: "इंदापूर व बावडा पीक मार्गदर्शन",
+        tele_tag: "माळशिरस व महाळुंग पीक मार्गदर्शन",
         tele_title: "हंगामी कृषी सज्जता",
         tele_crop1: "ऊस व डाळिंब बागायत",
         tele_status1: "फर्टिगेशन स्टॉक सज्ज",
@@ -1332,7 +1339,7 @@
         brands_heading: "नामांकित कृषी कंपन्यांचे अधिकृत विक्रेते व वितरक",
         cat_eyebrow: "निवडक कृषी निविष्ठा संग्रह",
         cat_title: "विक्रमी उत्पादनासाठी दर्जेदार कृषी उत्पादने",
-        cat_desc: "वर्गवारी किंवा पिकाच्या अवस्थेनुसार उत्पादने निवडा. त्वरित दर जाणून घेण्यासाठी व बावडा दुकानात माल राखीव ठेवण्यासाठी व्हॉट्सॲप ऑर्डर यादीत जोडा.",
+        cat_desc: "वर्गवारी किंवा पिकाच्या अवस्थेनुसार उत्पादने निवडा. त्वरित दर जाणून घेण्यासाठी व महाळुंग दुकानात माल राखीव ठेवण्यासाठी व्हॉट्सॲप ऑर्डर यादीत जोडा.",
         cat_view_list: "माझी व्हॉट्सॲप ऑर्डर यादी पहा",
         tab_all: "सर्व उत्पादने",
         tab_seeds: "🌱 प्रमाणित बियाणे",
@@ -1347,17 +1354,17 @@
         stage_flowering: "फुलधारणा व फळवाढ",
         stage_protection: "कीड व रोग संरक्षण",
         empty_title: "जुळणारी उत्पादने आढळली नाहीत",
-        empty_sub: "आमच्या बावडा दुकानातील सर्व उत्पादने पाहण्यासाठी फिल्टर रीसेट करा.",
+        empty_sub: "आमच्या महाळुंग दुकानातील सर्व उत्पादने पाहण्यासाठी फिल्टर रीसेट करा.",
         empty_btn: "सर्व फिल्टर काढा",
         gal_eyebrow: "यशोगाथा • शेतकऱ्यांचे अनुभव",
         gal_title: "यशोगाथा व प्रगतशील शेतकरी",
-        gal_subtitle: "श्री साईनाथ कृषी भांडारच्या मार्गदर्शनाखाली आणि प्रमाणित निविष्ठांच्या वापरातून बावडा व इंदापूर परिसरातील शेतकऱ्यांनी घेतलेले विक्रमी उत्पादन.",
+        gal_subtitle: "श्री साईनाथ कृषी भांडारच्या मार्गदर्शनाखाली आणि प्रमाणित निविष्ठांच्या वापरातून महाळुंग, अकलूज व माळशिरस परिसरातील शेतकऱ्यांनी घेतलेले विक्रमी उत्पादन.",
         gal_hint: "फोटो मोठा करून पाहण्यासाठी क्लिक करा",
         lb_cta: "ही उत्पादने पहा →",
-        adv_eyebrow: "प्रादेशिक कृषी सल्लागार कक्ष • बावडा व इंदापूर",
+        adv_eyebrow: "प्रादेशिक कृषी सल्लागार कक्ष • महाळुंग व माळशिरस",
         adv_title: "आधुनिक पीक व मृदा सल्ला केंद्र",
-        adv_subtitle: "तुमचे पीक, वाढीची अवस्था आणि इंदापूर/बावडा परिसरातील जमीन व पाण्याचा प्रकार निवडा आणि त्वरित खत मात्रा व फवारणी वेळापत्रक मिळवा.",
-        alert_badge: "बावडा-इंदापूर हवामान व कीड इशारा:",
+        adv_subtitle: "तुमचे पीक, वाढीची अवस्था आणि महाळुंग/अकलूज–टेंभुर्णी रोड परिसरातील जमीन व पाण्याचा प्रकार निवडा आणि त्वरित खत मात्रा व फवारणी वेळापत्रक मिळवा.",
+        alert_badge: "माळशिरस-महाळुंग हवामान व कीड इशारा:",
         alert_next: "पुढील सूचना ↻",
         diag_crop_lbl: "१. पीक निवडा",
         crop_sugarcane: "ऊस (Sugarcane)",
@@ -1369,7 +1376,7 @@
         dstage_flw: "फुलोरा अवस्था",
         dstage_rip: "फळ / पक्वता",
         diag_soil_lbl: "३. जमीन व सिंचन प्रकार",
-        soil_canal: "उजनी कालवा बागायत",
+        soil_canal: "नीरा उजवा कालवा बागायत",
         soil_black: "मध्यम काळी / विहीर",
         calc_tag: "अचूक शेती साधन",
         calc_title: "एकर व गुंठे फवारणी/खत मात्रा गणकयंत्र",
@@ -1387,17 +1394,17 @@
         calc_res_water: "पाणी प्रमाण",
         calc_res_tanks: "१६ लिटर पंप संख्या",
         calc_send_wa: "मात्रा व्हॉट्सॲपवर पाठवा",
-        photo_tag: "त्वरित पीक चिकित्सालय • बावडा",
+        photo_tag: "त्वरित पीक चिकित्सालय • महाळुंग",
         photo_title: "पाने पिवळी पडणे, अळी किंवा तेल्या डाग दिसत आहेत?",
-        photo_desc: "सूर्यप्रकाशात पिकाच्या बाधित पानाचा, खोडाचा किंवा फळाचा स्पष्ट फोटो काढा आणि अचूक निदानासाठी थेट आमच्या बावडा कृषी सल्लागार कक्षाच्या व्हॉट्सॲपवर पाठवा.",
-        photo_pt1: "इंदापूर परिसरातील जमीन व पाण्याच्या सामू (pH) नुसार मोफत सल्ला",
+        photo_desc: "सूर्यप्रकाशात पिकाच्या बाधित पानाचा, खोडाचा किंवा फळाचा स्पष्ट फोटो काढा आणि अचूक निदानासाठी थेट आमच्या महाळुंग कृषी सल्लागार कक्षाच्या व्हॉट्सॲपवर पाठवा.",
+        photo_pt1: "माळशिरस परिसरातील जमीन व पाण्याच्या सामू (pH) नुसार मोफत सल्ला",
         photo_pt2: "अचूक औषध मिश्रण व सुरक्षित फवारणी वेळापत्रक",
         photo_cta: "पानाचा / पिकाचा फोटो व्हॉट्सॲपवर पाठवा",
         loc_eyebrow: "आमच्या दुकानाला भेट द्या",
-        loc_title: "श्री साईनाथ कृषी भांडार, बावडा",
-        loc_subtitle: "बावडा, ता. इंदापूर येथे मध्यवर्ती ठिकाणी स्थित. प्रत्यक्ष पीक सल्ल्यासाठी दुकानात या किंवा खाली आपली मागणी नोंदवा.",
+        loc_title: "श्री साईनाथ कृषी भांडार, महाळुंग",
+        loc_subtitle: "कुबेर नर्सरी जवळ, अकलूज–टेंभुर्णी रोड, महाळुंग येथे मध्यवर्ती ठिकाणी स्थित. प्रत्यक्ष पीक सल्ल्यासाठी दुकानात या किंवा खाली आपली मागणी नोंदवा.",
         store_card_heading: "दुकानाची माहिती व पत्ता",
-        store_open_pill: "आठवड्याचे ७ दिवस सुरू",
+        store_open_pill: "दररोज सुरू",
         lbl_addr: "दुकानाचा पत्ता",
         val_addr: SHOP_CONFIG.addressMr,
         lbl_hours: "दुकानाची वेळ",
@@ -1406,13 +1413,13 @@
         btn_directions: "गूगल मॅपमध्ये रस्ता पहा",
         btn_chat_now: "व्हॉट्सॲपवर संवाद साधा",
         form_heading: "दरपत्रक किंवा पीक सल्ल्यासाठी विचारणा करा",
-        form_subheading: "खाली आपली माहिती भरा. आमचा बावडा येथील प्रतिनिधी उत्पादनाची उपलब्धता व अचूक मात्रेसह त्वरित संपर्क करेल.",
+        form_subheading: "खाली आपली माहिती भरा. आमचा महाळुंग येथील प्रतिनिधी उत्पादनाची उपलब्धता व अचूक मात्रेसह त्वरित संपर्क करेल.",
         f_name: "शेतकऱ्याचे नाव *",
         f_name_ph: "उदा. संतोष जगताप",
         f_phone: "मोबाईल / व्हॉट्सॲप क्रमांक *",
-        f_phone_ph: "उदा. 9822000000",
+        f_phone_ph: "उदा. 9096779722",
         f_village: "गाव / परिसर *",
-        f_village_ph: "उदा. बावडा / निरवांगी / रेडणी",
+        f_village_ph: "उदा. महाळुंग / अकलूज / यशवंतनगर",
         f_crop: "पीक व क्षेत्रफळ",
         f_crop_ph: "उदा. ऊस (४ एकर)",
         f_notes: "आवश्यक बियाणे, खते किंवा पिकाची समस्या *",
@@ -1420,38 +1427,39 @@
         f_submit: "विचारणा पाठवा",
         f_ok_title: "आपली नोंद यशस्वीरित्या झाली आहे!",
         f_ok_wa: "थेट व्हॉट्सॲपवर संदेश पाठवा",
-        footer_about: "बावडा, इंदापूर तालुका आणि पुणे जिल्ह्यातील शेतकरी बांधवांच्या सेवेसाठी प्रमाणित बियाणे, संतुलित खते आणि प्रामाणिक कृषी मार्गदर्शनास समर्पित.",
-        footer_gst: "शासकीय कृषी परवाना व GST नोंदणीकृत • बावडा, पुणे ४१३१०३",
+        footer_about: "महाळुंग, अकलूज, माळशिरस तालुका आणि सोलापूर जिल्ह्यातील शेतकरी बांधवांच्या सेवेसाठी प्रमाणित बियाणे, संतुलित खते आणि प्रामाणिक कृषी मार्गदर्शनास समर्पित.",
+        footer_gst: "शासकीय कृषी परवाना व GST नोंदणीकृत • महाळुंग, ता. माळशिरस ४१३११२",
         footer_nav_title: "महत्त्वाचे दुवे",
         footer_kisan_title: "शेतकरी सहाय्य व हेल्पलाईन",
         footer_kisan_toll: "राष्ट्रीय किसान कॉल सेंटर: १८००-१८०-१५५१",
-        footer_store_num: "बावडा दुकान थेट संपर्क:",
+        footer_store_num: "महाळुंग दुकान थेट संपर्क:",
         back_to_top: "वर जा",
         rights: "सर्व हक्क राखीव.",
-        jai_kisan: "जय जवान, जय किसान • बावडा, महाराष्ट्र 🇮🇳",
+        jai_kisan: "जय जवान, जय किसान • महाळुंग, महाराष्ट्र 🇮🇳",
         m_comp: "तांत्रिक घटक:",
         m_dosage: "शिफारस केलेली मात्रा:",
         m_packs: "उपलब्ध पॅकिंग:",
         btn_add_list: "+ ऑर्डर यादीत जोडा",
         btn_order_wa: "व्हॉट्सॲपवर ऑर्डर करा",
         btn_specs: "तपशील पहा",
-        drawer_tag: "बावडा दुकान जलद ऑर्डर",
+        drawer_tag: "महाळुंग दुकान जलद ऑर्डर",
         drawer_title: "माझी व्हॉट्सॲप ऑर्डर यादी",
-        drawer_note: "निवडलेल्या वस्तूंचे ताजे दर जाणून घेण्यासाठी व बावडा दुकानात ऑर्डर राखीव ठेवण्यासाठी थेट व्हॉट्सॲपवर यादी पाठवा.",
+        drawer_note: "निवडलेल्या वस्तूंचे ताजे दर जाणून घेण्यासाठी व महाळुंग दुकानात ऑर्डर राखीव ठेवण्यासाठी थेट व्हॉट्सॲपवर यादी पाठवा.",
         drawer_send_btn: "संपूर्ण यादी व्हॉट्सॲपवर पाठवा",
         drawer_empty: "तुमची ऑर्डर यादी सध्या रिकामी आहे. उत्पादनांमधून वस्तू जोडा.",
         float_btn: "ऑर्डर यादी",
-        music_title: "शेतकरी पार्श्वसंगीत",
-        music_tap: "सुरू करण्यासाठी स्पर्श करा",
-        music_playing: "सुरू आहे • थांबवण्यासाठी क्लिक करा",
-        music_paused: "थांबलेले • सुरू करण्यासाठी क्लिक करा"
+        music_title: "शेतकरी पार्श्वसंगीत • कृष्ण बासरी",
+        music_tap: "आवाजासाठी स्क्रीनवर स्पर्श करा",
+        music_playing: "कृष्ण बासरी सुरू आहे • बंद करा",
+        music_paused: "पार्श्वसंगीत बंद • सुरू करा",
+        music_local_warn: "लाइव्ह HTTPS लिंकवर आवाज सुरू होईल"
       },
       en: {
-        top_status: "Open Today • 8:00 AM – 8:30 PM",
-        top_loc: "Bawada, Tal. Indapur, Dist. Pune",
+        top_status: "Open Today • 8:00 AM – 8:30 PM (Open Daily)",
+        top_loc: "Mahalung (Akluj–Tembhurni Road), Tal. Malshiras, Dist. Solapur",
         top_cert: "Govt. Licensed Agri-Input Kendra • 100% GST Billing",
         shop_name: "Shri Sainath Krushi Bhandar",
-        shop_sub: "Bawada, Tal. Indapur, Dist. Pune",
+        shop_sub: "Mahalung, Tal. Malshiras, Dist. Solapur",
         nav_home: "Home",
         nav_catalog: "Product Catalog",
         nav_gallery: "Success Farms",
@@ -1460,17 +1468,17 @@
         btn_order_list: "Order List",
         btn_call: "Call Shop",
         btn_wa_direct: "WhatsApp Order",
-        hero_badge: "Authorized Agri-Input Partner • Bawada, Indapur",
+        hero_badge: "Authorized Agri-Input Partner • Mahalung, Malshiras",
         hero_title_1: "Cultivating Prosperity with",
         hero_title_2: "Science & Farmer Trust",
-        hero_subtitle: "Serving progressive farmers across Bawada, Indapur, and Pune District with 100% genuine certified seeds, balanced micronutrients, targeted crop protection, and precision drip irrigation solutions.",
+        hero_subtitle: "Serving progressive farmers across Mahalung, Akluj, Malshiras, and Solapur District with 100% genuine certified seeds, balanced micronutrients, targeted crop protection, and precision drip irrigation solutions.",
         hero_cta_primary: "Explore Product Catalog",
         hero_cta_secondary: "Direct WhatsApp Order",
         metric_years: "Years of Trust",
         metric_1: "Farmers Served",
         metric_products: "Certified Products",
         metric_2: "Genuine Brands",
-        tele_tag: "Indapur & Bawada Crop Desk",
+        tele_tag: "Malshiras & Mahalung Crop Desk",
         tele_title: "Seasonal Agri-Readiness",
         tele_crop1: "Sugarcane & Pomegranate",
         tele_status1: "Fertigation Ready",
@@ -1484,7 +1492,7 @@
         brands_heading: "Authorized Dealer & Stockist For Leading Agricultural Brands",
         cat_eyebrow: "Curated Agri-Input Catalog",
         cat_title: "Precision Inputs for Maximum Yield",
-        cat_desc: "Filter by product category or crop stage. Add items to your WhatsApp Order List to request instant rates and reserve stock at our Bawada showroom.",
+        cat_desc: "Filter by product category or crop stage. Add items to your WhatsApp Order List to request instant rates and reserve stock at our Mahalung showroom.",
         cat_view_list: "Review My WhatsApp Order List",
         tab_all: "All Products",
         tab_seeds: "🌱 Certified Seeds",
@@ -1499,17 +1507,17 @@
         stage_flowering: "Flowering & Fruiting",
         stage_protection: "Pest & Disease Shield",
         empty_title: "No matching products found",
-        empty_sub: "Reset your filters or search term to browse our full Bawada store inventory.",
+        empty_sub: "Reset your filters or search term to browse our full Mahalung store inventory.",
         empty_btn: "Reset Filters",
         gal_eyebrow: "Success Stories • Farmer Harvests",
         gal_title: "Farmer Success Stories & Bumper Harvests",
-        gal_subtitle: "Record yields achieved by progressive farmers across Bawada and Indapur using certified inputs and guidance from Shri Sainath Krushi Bhandar.",
+        gal_subtitle: "Record yields achieved by progressive farmers across Mahalung, Akluj, and Malshiras using certified inputs and guidance from Shri Sainath Krushi Bhandar.",
         gal_hint: "Click any photo to view full harvest details",
         lb_cta: "Explore These Inputs →",
-        adv_eyebrow: "Regional Agronomist Desk • Bawada & Indapur",
+        adv_eyebrow: "Regional Agronomist Desk • Mahalung & Malshiras",
         adv_title: "Precision Crop & Soil Command Center",
-        adv_subtitle: "Select your crop, growth stage, and Indapur/Bawada soil-water profile below for an instant agronomist prescription, NPK schedule, and acreage dosage calculator.",
-        alert_badge: "Bawada–Indapur Field Alert:",
+        adv_subtitle: "Select your crop, growth stage, and Mahalung / Akluj–Tembhurni Road soil-water profile below for an instant agronomist prescription, NPK schedule, and acreage dosage calculator.",
+        alert_badge: "Malshiras–Mahalung Field Alert:",
         alert_next: "Next Alert ↻",
         diag_crop_lbl: "1. Select Regional Crop",
         crop_sugarcane: "Sugarcane",
@@ -1521,7 +1529,7 @@
         dstage_flw: "Flowering",
         dstage_rip: "Ripening",
         diag_soil_lbl: "3. Soil & Irrigation Zone",
-        soil_canal: "Ujani Canal Irrigated",
+        soil_canal: "Nira Right Canal Irrigated",
         soil_black: "Medium Black / Well",
         calc_tag: "Precision Farm Tool",
         calc_title: "Acreage & Spray Dosage Calculator",
@@ -1539,17 +1547,17 @@
         calc_res_water: "Water Volume",
         calc_res_tanks: "16L Spray Pumps",
         calc_send_wa: "Send Prescription on WhatsApp",
-        photo_tag: "Instant Crop Clinic • Bawada",
+        photo_tag: "Instant Crop Clinic • Mahalung",
         photo_title: "Yellow Leaves, Borer or Telya Spots?",
-        photo_desc: "Snap a clear close-up photo of the affected leaf, stem, or fruit in daylight and send it directly to our Bawada Agronomist Desk on WhatsApp for accurate diagnosis.",
-        photo_pt1: "Free soil & water pH guidance for Indapur farms",
+        photo_desc: "Snap a clear close-up photo of the affected leaf, stem, or fruit in daylight and send it directly to our Mahalung Agronomist Desk on WhatsApp for accurate diagnosis.",
+        photo_pt1: "Free soil & water pH guidance for Malshiras farms",
         photo_pt2: "Exact tank-mix compatibility & safe PHI advice",
         photo_cta: "Send Leaf / Crop Photo on WhatsApp",
         loc_eyebrow: "Visit Our Showroom",
-        loc_title: "Shri Sainath Krushi Bhandar, Bawada",
-        loc_subtitle: "Conveniently located in Bawada, Indapur Taluka. Visit us for in-person crop consultation or send your requirement below.",
+        loc_title: "Shri Sainath Krushi Bhandar, Mahalung",
+        loc_subtitle: "Conveniently located near Kuber Nursery on Akluj–Tembhurni Road, Mahalung. Visit us for in-person crop consultation or send your requirement below.",
         store_card_heading: "Showroom Credentials",
-        store_open_pill: "Open All 7 Days",
+        store_open_pill: "Open Daily",
         lbl_addr: "Store Address",
         val_addr: SHOP_CONFIG.addressEn,
         lbl_hours: "Opening Hours",
@@ -1558,13 +1566,13 @@
         btn_directions: "Open in Google Maps",
         btn_chat_now: "Chat on WhatsApp",
         form_heading: "Request Rates or Crop Consultation",
-        form_subheading: "Submit your crop details below. Our team in Bawada will reply with exact product availability and dosage advice.",
+        form_subheading: "Submit your crop details below. Our team in Mahalung will reply with exact product availability and dosage advice.",
         f_name: "Farmer Name *",
         f_name_ph: "e.g. Santosh Jagtap",
         f_phone: "Mobile / WhatsApp Number *",
-        f_phone_ph: "e.g. 9822000000",
+        f_phone_ph: "e.g. 9096779722",
         f_village: "Village / Area *",
-        f_village_ph: "e.g. Bawada / Nirwangi / Redni",
+        f_village_ph: "e.g. Mahalung / Akluj / Yashwantnagar",
         f_crop: "Crop & Acreage",
         f_crop_ph: "e.g. Sugarcane (4 Acre)",
         f_notes: "Required Seeds, Fertilizers or Advice *",
@@ -1572,31 +1580,32 @@
         f_submit: "Submit Enquiry",
         f_ok_title: "Enquiry Recorded Successfully!",
         f_ok_wa: "Send Immediately on WhatsApp",
-        footer_about: "Dedicated to serving the farming community of Bawada, Indapur Taluka, and Pune District with certified seeds, balanced nutrition, and honest agricultural guidance.",
-        footer_gst: "Agri-Input License & GST Registered • Bawada, Pune 413103",
+        footer_about: "Dedicated to serving the farming community of Mahalung, Akluj, Malshiras Taluka, and Solapur District with certified seeds, balanced nutrition, and honest agricultural guidance.",
+        footer_gst: "Agri-Input License & GST Registered • Mahalung, Tal. Malshiras 413112",
         footer_nav_title: "Quick Navigation",
         footer_kisan_title: "Farmer Support & Helpline",
         footer_kisan_toll: "National Kisan Call Center: 1800-180-1551",
-        footer_store_num: "Bawada Store Direct:",
+        footer_store_num: "Mahalung Store Direct:",
         back_to_top: "Back to Top",
         rights: "All Rights Reserved.",
-        jai_kisan: "Jai Jawan, Jai Kisan • Bawada, Maharashtra 🇮🇳",
+        jai_kisan: "Jai Jawan, Jai Kisan • Mahalung, Maharashtra 🇮🇳",
         m_comp: "Technical Composition:",
         m_dosage: "Recommended Dosage:",
         m_packs: "Available Pack Sizes:",
         btn_add_list: "+ Add to Order List",
         btn_order_wa: "Order on WhatsApp",
         btn_specs: "Quick Specs",
-        drawer_tag: "Bawada Store Quick Order",
+        drawer_tag: "Mahalung Store Quick Order",
         drawer_title: "My WhatsApp Order List",
         drawer_note: "Send your selected items directly to Shri Sainath Krushi Bhandar on WhatsApp for instant rate confirmation & pickup/delivery.",
         drawer_send_btn: "Send Complete Order on WhatsApp",
         drawer_empty: "Your order list is currently empty. Add products from the catalog.",
         float_btn: "Order List",
-        music_title: "Farmer Background Music",
-        music_tap: "Tap anywhere to play",
-        music_playing: "Playing • Tap to Pause",
-        music_paused: "Paused • Tap to Play"
+        music_title: "Farmer Ambient • Krishna Flute",
+        music_tap: "Tap anywhere for sound",
+        music_playing: "Krishna Flute Playing • Mute",
+        music_paused: "Music Muted • Play",
+        music_local_warn: "Audio plays on live HTTPS link"
       }
     };
 
@@ -1766,15 +1775,15 @@
       }
     ];
 
-    // Regional Agronomist Desk Data (100% Marathi + English)
+    // Regional Agronomist Desk Data (100% Marathi + English for Malshiras / Mahalung)
     const AGRO_ALERTS = [
       {
-        mr: "उजनी कालवा पट्ट्यात सकाळचे दव व आर्द्रता वाढल्याने डाळिंबावर 'तेल्या' व कांद्यावर 'करपा' रोगाचा धोका आहे — प्रतिबंधात्मक बुरशीनाशक फवारणी करावी.",
-        en: "Morning dew & humidity along the Ujani canal belt increases Pomegranate 'Telya' & Onion purple blotch risk — apply preventive fungicide spray."
+        mr: "नीरा उजवा कालवा व अकलूज–महाळुंग पट्ट्यात सकाळचे दव व आर्द्रता वाढल्याने डाळिंबावर 'तेल्या' व कांद्यावर 'करपा' रोगाचा धोका आहे — प्रतिबंधात्मक बुरशीनाशक फवारणी करावी.",
+        en: "Morning dew & humidity along the Nira Right Canal & Akluj–Mahalung belt increases Pomegranate 'Telya' & Onion purple blotch risk — apply preventive fungicide spray."
       },
       {
-        mr: "इंदापूर तालुक्यातील चुनखडीयुक्त जमिनीत ऊस व डाळिंब पाने पिवळी पडत असल्यास चिलेटेड फेरस + मॅग्नेशियम सल्फेट ठिबकमधून द्यावे.",
-        en: "In calcareous Indapur soils, if sugarcane or pomegranate leaves turn yellow, apply Chelated Ferrous + Magnesium Sulphate via drip."
+        mr: "माळशिरस तालुक्यातील चुनखडीयुक्त जमिनीत ऊस व डाळिंब पाने पिवळी पडत असल्यास चिलेटेड फेरस + मॅग्नेशियम सल्फेट ठिबकमधून द्यावे.",
+        en: "In calcareous Malshiras soils, if sugarcane or pomegranate leaves turn yellow, apply Chelated Ferrous + Magnesium Sulphate via drip."
       },
       {
         mr: "रब्बी हरभरा व गहू पेरणीपूर्वी जैविक रायझोबियम व ट्रायकोडर्मा बीजप्रक्रिया केल्यास मर रोग टळतो व फुटवे जोमदार येतात.",
@@ -1791,8 +1800,8 @@
           npkEn: "Apply Drip NPK 19:19:19 (5 kg/Acre) + Humic Acid (1 L/Acre) every 15 days.",
           pestMr: "खोडकीड (Early Shoot Borer) नियंत्रणासाठी क्लोराँट्रानिलिप्रोल फवारणी व उसाची भरणी करावी.",
           pestEn: "Monitor for Early Shoot Borer; apply Chlorantraniliprole spray and complete earthing-up.",
-          soilCanalMr: "उजनी कालवा ओलिताखाली पाण्याचा निचरा ठेवावा व पालाश (MOP) मात्रा दोन हप्त्यांत विभागून द्यावी.",
-          soilCanalEn: "Under Ujani canal irrigation, ensure proper drainage and split Potash (MOP) into two doses.",
+          soilCanalMr: "नीरा उजवा कालवा ओलिताखाली पाण्याचा निचरा ठेवावा व पालाश (MOP) मात्रा दोन हप्त्यांत विभागून द्यावी.",
+          soilCanalEn: "Under Nira Right Canal irrigation, ensure proper drainage and split Potash (MOP) into two doses.",
           soilBlackMr: "मध्यम काळ्या व विहीर बागायतीत बाष्पीभवन रोखण्यासाठी पाचटाचे आच्छादन करावे.",
           soilBlackEn: "In medium black well-irrigated plots, retain trash mulching to conserve soil moisture.",
           recProductIds: ["fert-npk", "prot-insect", "irr-drip"]
@@ -2022,11 +2031,11 @@
       const enBtn = document.getElementById('btn-lang-en');
 
       if (lang === 'mr') {
-        document.title = "श्री साईनाथ कृषी भांडार | बावडा, ता. इंदापूर, जि. पुणे";
+        document.title = "श्री साईनाथ कृषी भांडार | महाळुंग, ता. माळशिरस, जि. सोलापूर";
         mrBtn.className = "px-3 py-0.5 rounded-full text-xs font-bold transition-all bg-gold text-obsidian shadow-sm";
         enBtn.className = "px-3 py-0.5 rounded-full text-xs font-semibold transition-all text-emerald-100 hover:text-white";
       } else {
-        document.title = "Shri Sainath Krushi Bhandar | Bawada, Indapur, Pune";
+        document.title = "Shri Sainath Krushi Bhandar | Mahalung, Malshiras, Solapur";
         enBtn.className = "px-3 py-0.5 rounded-full text-xs font-bold transition-all bg-gold text-obsidian shadow-sm";
         mrBtn.className = "px-3 py-0.5 rounded-full text-xs font-semibold transition-all text-emerald-100 hover:text-white";
       }
@@ -2179,7 +2188,7 @@
       };
 
       const prodName = currentLang === 'mr' ? p.nameMr : p.nameEn;
-      const waMsg = encodeURIComponent(`नमस्कार श्री साईनाथ कृषी भांडार (बावडा),\nमला या उत्पादनाचा दर व उपलब्धता जाणून घ्यायची आहे:\n• ${prodName}`);
+      const waMsg = encodeURIComponent(`नमस्कार श्री साईनाथ कृषी भांडार (महाळुंग),\nमला या उत्पादनाचा दर व उपलब्धता जाणून घ्यायची आहे:\n• ${prodName}`);
       document.getElementById('modal-wa-btn').href = `https://wa.me/${SHOP_CONFIG.whatsappNumber}?text=${waMsg}`;
 
       const modal = document.getElementById('specs-modal');
@@ -2294,7 +2303,7 @@
         return `${idx + 1}. ${name} — नग: ${entry.qty}`;
       });
       const msg = encodeURIComponent(
-        `नमस्कार श्री साईनाथ कृषी भांडार (बावडा),\nकृपया खालील कृषी उत्पादनांचे दर व उपलब्धता कळवावी:\n\n${lines.join('\n')}`
+        `नमस्कार श्री साईनाथ कृषी भांडार (महाळुंग),\nकृपया खालील कृषी उत्पादनांचे दर व उपलब्धता कळवावी:\n\n${lines.join('\n')}`
       );
       window.open(`https://wa.me/${SHOP_CONFIG.whatsappNumber}?text=${msg}`, '_blank', 'noopener');
     }
@@ -2302,8 +2311,8 @@
     function openDirectWhatsApp() {
       const msg = encodeURIComponent(
         currentLang === 'mr'
-          ? "नमस्कार श्री साईनाथ कृषी भांडार (बावडा), मला बियाणे, खते व पीक औषधांच्या दरांबद्दल माहिती हवी आहे."
-          : "Namaskar Shri Sainath Krushi Bhandar (Bawada), I would like to enquire about seeds, fertilizers, and crop protection inputs."
+          ? "नमस्कार श्री साईनाथ कृषी भांडार (महाळुंग), मला बियाणे, खते व पीक औषधांच्या दरांबद्दल माहिती हवी आहे."
+          : "Namaskar Shri Sainath Krushi Bhandar (Mahalung), I would like to enquire about seeds, fertilizers, and crop protection inputs."
       );
       window.open(`https://wa.me/${SHOP_CONFIG.whatsappNumber}?text=${msg}`, '_blank', 'noopener');
     }
@@ -2402,7 +2411,7 @@
           <div class="flex flex-wrap items-center justify-between gap-2">
             <h3 class="font-display text-lg sm:text-xl font-bold text-emeraldDeep">${title}</h3>
             <span class="px-3 py-1 rounded-full bg-emeraldDeep text-gold-light text-[11px] font-bold">
-              ${currentLang === 'mr' ? 'बावडा कृषी तज्ज्ञ शिफारस' : 'Bawada Agronomist Prescription'}
+              ${currentLang === 'mr' ? 'महाळुंग कृषी तज्ज्ञ शिफारस' : 'Mahalung Agronomist Prescription'}
             </span>
           </div>
 
@@ -2479,7 +2488,7 @@
       const waterText = document.getElementById('calc-out-water')?.textContent || '';
 
       const msg = encodeURIComponent(
-        `नमस्कार श्री साईनाथ कृषी भांडार (बावडा),\nमाझ्या शेतासाठी खालील खत/फवारणी मात्रेचे दर व उपलब्धता कळवावी:\n• प्रकार: ${treatLabel}\n• क्षेत्रफळ: ${areaVal} ${unitLabel}\n• आवश्यक प्रमाण: ${qtyText} (${waterText})`
+        `नमस्कार श्री साईनाथ कृषी भांडार (महाळुंग),\nमाझ्या शेतासाठी खालील खत/फवारणी मात्रेचे दर व उपलब्धता कळवावी:\n• प्रकार: ${treatLabel}\n• क्षेत्रफळ: ${areaVal} ${unitLabel}\n• आवश्यक प्रमाण: ${qtyText} (${waterText})`
       );
       window.open(`https://wa.me/${SHOP_CONFIG.whatsappNumber}?text=${msg}`, '_blank', 'noopener');
     }
@@ -2488,14 +2497,224 @@
       const cropBtn = document.querySelector(`.diag-crop-btn[data-crop="${activeDiagCrop}"]`);
       const cropLabel = cropBtn ? cropBtn.textContent.trim() : '';
       const msg = encodeURIComponent(
-        `नमस्कार श्री साईनाथ कृषी भांडार (बावडा),\nमी माझ्या ${cropLabel} पिकाच्या बाधित पानाचा/फळाचा फोटो पाठवत आहे. कृपया योग्य निदान व फवारणी मार्गदर्शन करावे.`
+        `नमस्कार श्री साईनाथ कृषी भांडार (महाळुंग),\nमी माझ्या ${cropLabel} पिकाच्या बाधित पानाचा/फळाचा फोटो पाठवत आहे. कृपया योग्य निदान व फवारणी मार्गदर्शन करावे.`
       );
       window.open(`https://wa.me/${SHOP_CONFIG.whatsappNumber}?text=${msg}`, '_blank', 'noopener');
     }
 
     // =====================================================================
-    // SUCCESS FARM GALLERY (web_site/photo) & LIGHTBOX RENDERER
+    // YOUTUBE KRISHNA FLUTE BACKGROUND MUSIC ENGINE (videoId: xNBKYG6inPw)
+    // Muted Auto-Start on Load + Smooth Volume Ramp (0 -> 65) on First Gesture
     // =====================================================================
+    let ytPlayer = null;
+    let ytPlayerReady = false;
+    let isMusicUnmuted = false;
+    let userPausedMusic = false;
+    let volumeRampTimer = null;
+    const isLocalFileProtocol = window.location.protocol === 'file:';
+
+    function updateMusicPlayerLabels() {
+      const pill = document.getElementById('music-player-pill');
+      const titleEl = document.getElementById('music-status-label');
+      const subEl = document.getElementById('music-sub-label');
+      const btnEl = document.getElementById('music-toggle-btn');
+      if (!pill || !titleEl || !subEl || !btnEl) return;
+
+      titleEl.textContent = currentLang === 'mr' ? MEDIA_CONFIG.musicTitleMr : MEDIA_CONFIG.musicTitleEn;
+
+      if (isLocalFileProtocol) {
+        pill.classList.remove('eq-waiting');
+        pill.classList.add('eq-paused');
+        pill.title = DICT[currentLang].music_local_warn;
+        btnEl.textContent = '🔇';
+        subEl.classList.remove('animate-pulse');
+        subEl.textContent = DICT[currentLang].music_local_warn;
+        return;
+      }
+
+      if (isMusicUnmuted && !userPausedMusic) {
+        pill.classList.remove('eq-paused', 'eq-waiting');
+        btnEl.textContent = '🔊';
+        subEl.classList.remove('animate-pulse', 'text-amber-200/95');
+        subEl.classList.add('text-emerald-200/90');
+        subEl.textContent = DICT[currentLang].music_playing;
+      } else if (userPausedMusic) {
+        pill.classList.remove('eq-waiting');
+        pill.classList.add('eq-paused');
+        btnEl.textContent = '▶';
+        subEl.classList.remove('animate-pulse', 'text-amber-200/95');
+        subEl.classList.add('text-emerald-200/80');
+        subEl.textContent = DICT[currentLang].music_paused;
+      } else {
+        // Muted auto-playing & awaiting first visitor touch/click/scroll
+        pill.classList.remove('eq-paused');
+        pill.classList.add('eq-waiting');
+        btnEl.textContent = '🔇';
+        subEl.classList.remove('text-emerald-200/90');
+        subEl.classList.add('text-amber-200/95', 'animate-pulse');
+        subEl.textContent = DICT[currentLang].music_tap;
+      }
+    }
+
+    function rampKrishnaFluteVolume(targetVol = 65, durationMs = 1200) {
+      if (!ytPlayer || !ytPlayerReady) return;
+      if (volumeRampTimer) clearInterval(volumeRampTimer);
+
+      let currentVol = 0;
+      const steps = 24;
+      const stepTime = Math.max(25, Math.floor(durationMs / steps));
+      const increment = targetVol / steps;
+
+      try {
+        ytPlayer.setVolume(0);
+        ytPlayer.unMute();
+        ytPlayer.playVideo();
+      } catch (e) {}
+
+      volumeRampTimer = setInterval(() => {
+        if (userPausedMusic || !ytPlayerReady) {
+          clearInterval(volumeRampTimer);
+          volumeRampTimer = null;
+          return;
+        }
+        currentVol = Math.min(targetVol, currentVol + increment);
+        try {
+          ytPlayer.setVolume(Math.round(currentVol));
+        } catch (e) {}
+        if (currentVol >= targetVol) {
+          clearInterval(volumeRampTimer);
+          volumeRampTimer = null;
+        }
+      }, stepTime);
+    }
+
+    function unmuteAndStartKrishnaFlute() {
+      if (userPausedMusic || isMusicUnmuted || !ytPlayer || !ytPlayerReady) return;
+      isMusicUnmuted = true;
+      rampKrishnaFluteVolume(65, 1200);
+      updateMusicPlayerLabels();
+    }
+
+    function toggleBackgroundMusic() {
+      if (isLocalFileProtocol) {
+        updateMusicPlayerLabels();
+        return;
+      }
+      if (!ytPlayer || !ytPlayerReady) return;
+
+      if (isMusicUnmuted && !userPausedMusic) {
+        // User explicitly muted/paused
+        userPausedMusic = true;
+        isMusicUnmuted = false;
+        if (volumeRampTimer) {
+          clearInterval(volumeRampTimer);
+          volumeRampTimer = null;
+        }
+        try {
+          ytPlayer.mute();
+          ytPlayer.pauseVideo();
+        } catch (e) {}
+        updateMusicPlayerLabels();
+      } else {
+        // User explicitly started/unmuted
+        userPausedMusic = false;
+        isMusicUnmuted = true;
+        rampKrishnaFluteVolume(65, 900);
+        updateMusicPlayerLabels();
+      }
+    }
+
+    // YouTube IFrame API Global Callback
+    window.onYouTubeIframeAPIReady = function() {
+      const playerVars = {
+        autoplay: 1,
+        mute: 1,
+        controls: 0,
+        disablekb: 1,
+        fs: 0,
+        iv_load_policy: 3,
+        loop: 1,
+        modestbranding: 1,
+        playlist: MEDIA_CONFIG.youtubeVideoId,
+        playsinline: 1,
+        rel: 0
+      };
+      if (window.location.protocol.startsWith('http')) {
+        playerVars.origin = window.location.origin;
+      }
+
+      ytPlayer = new YT.Player('yt-bg-player', {
+        height: '1',
+        width: '1',
+        videoId: MEDIA_CONFIG.youtubeVideoId,
+        playerVars: playerVars,
+        events: {
+          onReady: function(event) {
+            ytPlayerReady = true;
+            try {
+              // Start muted immediately on load so browsers allow instant background playback
+              event.target.mute();
+              event.target.setVolume(0);
+              event.target.playVideo();
+            } catch (e) {}
+            updateMusicPlayerLabels();
+          },
+          onStateChange: function(event) {
+            if (event.data === YT.PlayerState.ENDED && !userPausedMusic) {
+              try {
+                event.target.seekTo(0);
+                event.target.playVideo();
+              } catch (e) {}
+            }
+          }
+        }
+      });
+    };
+
+    function initBackgroundMusic() {
+      updateMusicPlayerLabels();
+      if (isLocalFileProtocol) return;
+
+      // Load YouTube IFrame API script asynchronously
+      if (!document.getElementById('yt-iframe-api-script')) {
+        const tag = document.createElement('script');
+        tag.id = 'yt-iframe-api-script';
+        tag.src = 'https://www.youtube.com/iframe_api';
+        const firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      }
+
+      // Smoothly unmute & fade up volume (0 -> 65) on visitor's very first interaction
+      const unlockEvents = ['pointerdown', 'touchstart', 'click', 'scroll', 'wheel', 'keydown'];
+      const handleFirstGesture = (e) => {
+        // Ignore clicks directly on the music toggle button (handled by toggleBackgroundMusic)
+        if (e.target && e.target.closest && e.target.closest('#music-toggle-btn')) {
+          return;
+        }
+        if (userPausedMusic) {
+          removeGestureListeners();
+          return;
+        }
+        if (ytPlayerReady && !isMusicUnmuted) {
+          unmuteAndStartKrishnaFlute();
+          removeGestureListeners();
+        }
+      };
+
+      const removeGestureListeners = () => {
+        unlockEvents.forEach(evt => {
+          window.removeEventListener(evt, handleFirstGesture, { capture: true });
+          document.removeEventListener(evt, handleFirstGesture, { capture: true });
+        });
+      };
+
+      unlockEvents.forEach(evt => {
+        window.addEventListener(evt, handleFirstGesture, { passive: true, capture: true });
+        document.addEventListener(evt, handleFirstGesture, { passive: true, capture: true });
+      });
+    }
+
+    // Success Farm Gallery Renderer & Lightbox
     function renderSuccessGallery() {
       const grid = document.getElementById('success-gallery-grid');
       if (!grid) return;
@@ -2504,32 +2723,28 @@
         const crop = currentLang === 'mr' ? item.cropMr : item.cropEn;
         const farmer = currentLang === 'mr' ? item.farmerMr : item.farmerEn;
         const village = currentLang === 'mr' ? item.villageMr : item.villageEn;
-        const desc = currentLang === 'mr' ? item.descMr : item.descEn;
         const resolvedUrl = resolveDriveImageUrl(item.src);
 
         return `
-          <article onclick="openFarmLightbox(${idx})" class="cursor-pointer group rounded-3xl bg-emeraldDeep/85 border border-gold/25 hover:border-gold overflow-hidden shadow-xl transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between">
-            <div class="relative aspect-[4/3] overflow-hidden bg-obsidian">
+          <div onclick="openFarmLightbox(${idx})" class="group cursor-pointer rounded-3xl bg-emeraldDeep/70 border border-gold/25 hover:border-gold overflow-hidden shadow-xl transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between">
+            <div class="relative aspect-[4/3] bg-obsidian overflow-hidden">
               <img
                 src="${resolvedUrl}"
                 alt="${crop}"
                 loading="lazy"
-                onerror="handleFarmImgError(this, '${item.src.replace(/'/g, "\\'")}', '${item.theme}')"
+                onerror="handleFarmImgError(this, '${item.src}', '${item.theme}')"
                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               />
-              <div class="absolute inset-0 bg-gradient-to-t from-obsidian/90 via-obsidian/20 to-transparent"></div>
-              <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-gold text-obsidian text-[11px] font-extrabold shadow">
+              <div class="absolute inset-0 bg-gradient-to-t from-obsidian/85 via-transparent to-transparent"></div>
+              <span class="absolute bottom-3 left-3 right-3 text-xs font-bold text-gold-light leading-snug">
                 ${crop}
               </span>
-              <span class="absolute bottom-3 left-3 right-3 text-xs font-semibold text-emerald-100">
-                ${village}
-              </span>
             </div>
-            <div class="p-5 space-y-2">
-              <h3 class="font-display text-base font-bold text-white group-hover:text-gold-light transition">${farmer}</h3>
-              <p class="text-xs text-emerald-100/80 line-clamp-2 leading-relaxed">${desc}</p>
+            <div class="p-4 space-y-1">
+              <p class="text-xs font-bold text-white">${farmer}</p>
+              <p class="text-[11px] text-emerald-200/80">${village}</p>
             </div>
-          </article>
+          </div>
         `;
       }).join('');
     }
@@ -2538,10 +2753,10 @@
       const item = MEDIA_CONFIG.photos[index];
       if (!item) return;
 
-      const lbImg = document.getElementById('lb-img');
-      lbImg.dataset.triedThumb = '';
-      lbImg.onerror = function() { handleFarmImgError(this, item.src, item.theme); };
-      lbImg.src = resolveDriveImageUrl(item.src);
+      const imgEl = document.getElementById('lb-img');
+      imgEl.dataset.triedThumb = '';
+      imgEl.onerror = () => handleFarmImgError(imgEl, item.src, item.theme);
+      imgEl.src = resolveDriveImageUrl(item.src);
 
       document.getElementById('lb-badge').textContent = currentLang === 'mr' ? item.cropMr : item.cropEn;
       document.getElementById('lb-title').textContent = currentLang === 'mr' ? item.farmerMr : item.farmerEn;
@@ -2560,192 +2775,6 @@
       modal.classList.remove('flex');
     }
 
-    // =====================================================================
-    // SMART AUTOPLAY BACKGROUND MUSIC ENGINE (web_site/music + Raga Fallback)
-    // =====================================================================
-    let isMusicPlaying = false;
-    let userPausedMusic = false;
-    let usingAmbientSynth = false;
-    let ambientCtx = null;
-    let ambientTimer = null;
-
-    function resolveDriveAudioUrl(input) {
-      const fileId = extractDriveFileId(input);
-      if (fileId) return `https://docs.google.com/uc?export=download&id=${fileId}`;
-      return input;
-    }
-
-    function rampAudioVolume(audioEl, targetVolume = 0.5, durationMs = 1200) {
-      if (!audioEl) return;
-      audioEl.muted = false;
-      audioEl.volume = 0.05;
-      const steps = 15;
-      const stepTime = durationMs / steps;
-      const increment = (targetVolume - 0.05) / steps;
-      let currentStep = 0;
-      const timer = setInterval(() => {
-        currentStep++;
-        if (currentStep >= steps || audioEl.paused) {
-          audioEl.volume = targetVolume;
-          clearInterval(timer);
-        } else {
-          audioEl.volume = Math.min(targetVolume, audioEl.volume + increment);
-        }
-      }, stepTime);
-    }
-
-    function updateMusicPlayerLabels() {
-      const pill = document.getElementById('music-player-pill');
-      const titleEl = document.getElementById('music-status-label');
-      const subEl = document.getElementById('music-sub-label');
-      const btnEl = document.getElementById('music-toggle-btn');
-      if (!pill || !titleEl || !subEl || !btnEl) return;
-
-      titleEl.textContent = currentLang === 'mr' ? MEDIA_CONFIG.musicTitleMr : MEDIA_CONFIG.musicTitleEn;
-      if (isMusicPlaying) {
-        pill.classList.remove('eq-paused');
-        btnEl.textContent = '⏸';
-        subEl.textContent = DICT[currentLang].music_playing;
-      } else {
-        pill.classList.add('eq-paused');
-        btnEl.textContent = '▶';
-        subEl.textContent = userPausedMusic ? DICT[currentLang].music_paused : DICT[currentLang].music_tap;
-      }
-    }
-
-    function startAmbientFluteSynth() {
-      try {
-        const AudioCtx = window.AudioContext || window.webkitAudioContext;
-        if (!AudioCtx) return false;
-        if (!ambientCtx) ambientCtx = new AudioCtx();
-        if (ambientCtx.state === 'suspended') ambientCtx.resume();
-
-        usingAmbientSynth = true;
-        isMusicPlaying = true;
-        updateMusicPlayerLabels();
-
-        const notes = [261.63, 293.66, 329.63, 392.00, 440.00, 523.25];
-        let step = 0;
-
-        const playGentleNote = () => {
-          if (!isMusicPlaying || !usingAmbientSynth || !ambientCtx) return;
-          const now = ambientCtx.currentTime;
-          const osc = ambientCtx.createOscillator();
-          const gain = ambientCtx.createGain();
-          osc.type = 'sine';
-          osc.frequency.setValueAtTime(notes[step % notes.length], now);
-          step += (Math.random() > 0.4 ? 1 : 2);
-
-          gain.gain.setValueAtTime(0.0001, now);
-          gain.gain.exponentialRampToValueAtTime(0.032, now + 0.6);
-          gain.gain.exponentialRampToValueAtTime(0.0001, now + 2.6);
-
-          osc.connect(gain);
-          gain.connect(ambientCtx.destination);
-          osc.start(now);
-          osc.stop(now + 2.7);
-        };
-
-        playGentleNote();
-        clearInterval(ambientTimer);
-        ambientTimer = setInterval(playGentleNote, 2400);
-        return true;
-      } catch (e) {
-        return false;
-      }
-    }
-
-    function stopAmbientFluteSynth() {
-      clearInterval(ambientTimer);
-      ambientTimer = null;
-    }
-
-    async function attemptPlayMusic(fromUserGesture = false) {
-      if (userPausedMusic) return;
-      const audioEl = document.getElementById('bg-music-audio');
-      if (!audioEl) return;
-
-      if (!audioEl.src) {
-        audioEl.src = resolveDriveAudioUrl(MEDIA_CONFIG.musicSource);
-      }
-
-      if (!usingAmbientSynth) {
-        try {
-          audioEl.muted = false;
-          audioEl.volume = fromUserGesture ? 0.1 : 0.45;
-          await audioEl.play();
-          isMusicPlaying = true;
-          if (fromUserGesture) rampAudioVolume(audioEl, 0.5, 1100);
-          updateMusicPlayerLabels();
-          return;
-        } catch (err) {
-          if (audioEl.error || audioEl.networkState === HTMLMediaElement.NETWORK_NO_SOURCE) {
-            if (fromUserGesture) startAmbientFluteSynth();
-            return;
-          }
-          try {
-            audioEl.muted = true;
-            await audioEl.play();
-            setTimeout(() => {
-              if (!userPausedMusic && !audioEl.paused) {
-                rampAudioVolume(audioEl, 0.5, 1200);
-                isMusicPlaying = true;
-                updateMusicPlayerLabels();
-              }
-            }, 250);
-          } catch (mutedErr) {
-            // Unlocks immediately on first visitor interaction below
-          }
-        }
-      } else {
-        startAmbientFluteSynth();
-      }
-    }
-
-    function toggleBackgroundMusic() {
-      const audioEl = document.getElementById('bg-music-audio');
-      if (isMusicPlaying) {
-        userPausedMusic = true;
-        isMusicPlaying = false;
-        if (audioEl) audioEl.pause();
-        stopAmbientFluteSynth();
-        updateMusicPlayerLabels();
-      } else {
-        userPausedMusic = false;
-        attemptPlayMusic(true);
-      }
-    }
-
-    function initBackgroundMusic() {
-      const audioEl = document.getElementById('bg-music-audio');
-      if (!audioEl) return;
-
-      audioEl.src = resolveDriveAudioUrl(MEDIA_CONFIG.musicSource);
-      audioEl.addEventListener('error', () => {
-        usingAmbientSynth = true;
-        if (!userPausedMusic) startAmbientFluteSynth();
-      });
-
-      attemptPlayMusic(false);
-      window.addEventListener('load', () => {
-        if (!isMusicPlaying && !userPausedMusic) attemptPlayMusic(false);
-      }, { once: true });
-
-      const unlockEvents = ['pointerdown', 'touchstart', 'click', 'keydown', 'scroll'];
-      const unlockAudio = () => {
-        if (!isMusicPlaying && !userPausedMusic) {
-          attemptPlayMusic(true);
-        }
-        if (isMusicPlaying) {
-          unlockEvents.forEach(evt => window.removeEventListener(evt, unlockAudio));
-        }
-      };
-
-      unlockEvents.forEach(evt =>
-        window.addEventListener(evt, unlockAudio, { passive: true })
-      );
-    }
-
     // Direct Enquiry Form Handler
     function submitFarmerForm(e) {
       e.preventDefault();
@@ -2761,10 +2790,10 @@
 
       summary.textContent = currentLang === 'mr'
         ? `शेतकरी: ${name} | गाव: ${village} | पीक: ${crop} — आम्ही लवकरच ${phone} वर संपर्क करू.`
-        : `Farmer: ${name} | Village: ${village} | Crop: ${crop} — Our Bawada desk will call ${phone} shortly.`;
+        : `Farmer: ${name} | Village: ${village} | Crop: ${crop} — Our Mahalung desk will call ${phone} shortly.`;
 
       const waText = encodeURIComponent(
-        `नमस्कार श्री साईनाथ कृषी भांडार (बावडा),\n*शेतकरी विचारणा / दरपत्रक मागणी:*\nनाव: ${name}\nमोबाईल: ${phone}\nगाव: ${village}\nपीक: ${crop}\nतपशील: ${notes}`
+        `नमस्कार श्री साईनाथ कृषी भांडार (महाळुंग),\n*शेतकरी विचारणा / दरपत्रक मागणी:*\nनाव: ${name}\nमोबाईल: ${phone}\nगाव: ${village}\nपीक: ${crop}\nतपशील: ${notes}`
       );
       waBtn.href = `https://wa.me/${SHOP_CONFIG.whatsappNumber}?text=${waText}`;
 
